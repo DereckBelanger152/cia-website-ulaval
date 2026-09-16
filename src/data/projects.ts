@@ -22,6 +22,8 @@ export interface Project {
   status: ProjectStatus;
   semester: Semester;
   partner?: string;
+  /* Taking applicants this term. Not every active project is. */
+  recruiting?: boolean;
 }
 
 export const projects: Project[] = [
@@ -36,6 +38,7 @@ export const projects: Project[] = [
     category: 'iaml',
     status: 'active',
     semester: 'automne2024',
+    recruiting: true,
   },
   {
     key: 'f1tenth',
@@ -49,19 +52,21 @@ export const projects: Project[] = [
     status: 'active',
     semester: 'automne2024',
     partner: 'VAUL',
+    recruiting: true,
   },
   {
     key: 'drone',
     image: '/project/drone.webp',
     defaultTitle: 'Drone - Laser Tag',
     defaultDescription:
-      'Développez un système laser clé en main pour une compétition FPV autonome : capteur 180°, émission, PCB custom et logiciel de gestion centralisé. Partenaire académique : Philippe Giguère. Team Lead : Anthony Lavertu.',
+      'Développez un système laser clé en main pour une compétition FPV autonome : capteur 180°, émission, PCB custom et logiciel de gestion centralisé. Partenaire académique : Philippe Giguère.',
     link: '/drone',
     github: 'https://github.com/cia-ulaval/drone',
     category: 'hardware',
     status: 'active',
     semester: 'hiver2025',
     partner: 'Philippe Giguère',
+    recruiting: true,
   },
   {
     key: 'poppy-conception',
@@ -72,7 +77,7 @@ export const projects: Project[] = [
     link: '/poppy-conception',
     github: 'https://github.com/cia-ulaval/poppy-conception',
     category: 'hardware',
-    status: 'active',
+    status: 'shipped',
     semester: 'hiver2025',
   },
   {
@@ -86,6 +91,8 @@ export const projects: Project[] = [
     category: 'robotics',
     status: 'active',
     semester: 'hiver2025',
+    partner: 'Vooban',
+    recruiting: true,
   },
   {
     key: 'nutrinov',
@@ -108,7 +115,7 @@ export const projects: Project[] = [
     link: '/sgd-beyond',
     github: 'https://github.com/cia-ulaval/sgd',
     category: 'iaml',
-    status: 'active',
+    status: 'shipped',
     semester: 'hiver2025',
   },
   {
@@ -122,6 +129,48 @@ export const projects: Project[] = [
     category: 'hardware',
     status: 'active',
     semester: 'automne2026',
+    recruiting: true,
+  },
+  {
+    key: 'navflow',
+    image: '',
+    defaultTitle: 'NavFlow',
+    defaultDescription:
+      "Et si les feux de circulation pouvaient apprendre à réduire eux-mêmes les embouteillages ? NavFlow entraîne des agents par renforcement dans un environnement urbain simulé, puis mesure leur effet sur le temps d'attente, la durée des trajets et la congestion.",
+    link: '/navflow',
+    github: 'https://github.com/cia-ulaval/NavFlow',
+    category: 'iaml',
+    status: 'active',
+    semester: 'automne2026',
+    recruiting: true,
+  },
+  {
+    key: 'biovision',
+    image: '',
+    defaultTitle: 'BioVision',
+    defaultDescription:
+      "Des téraoctets de vidéo captés par des colliers-caméras portés par des caribous de la Côte-Nord. BioVision développe des modèles de vision par ordinateur pour y reconnaître des comportements et caractériser l'environnement, avec le Département de biologie.",
+    link: '/biovision',
+    github: 'https://github.com/cia-ulaval/BioVision',
+    category: 'iaml',
+    status: 'active',
+    semester: 'automne2026',
+    partner: 'Département de biologie, ULaval',
+    recruiting: true,
+  },
+  {
+    key: 'hemomentor',
+    image: '',
+    defaultTitle: 'HemoMentor',
+    defaultDescription:
+      "Un assistant qui observe l'interface d'une machine d'hémolyse avec une caméra et montre à l'utilisateur où appuyer. Modèles vision-langage, inférence locale et suivi de la main, sans aucune modification de l'équipement.",
+    link: '/hemomentor',
+    github: 'https://github.com/cia-ulaval/HemoMentor',
+    category: 'iaml',
+    status: 'active',
+    semester: 'automne2026',
+    partner: 'Utili-M',
+    recruiting: true,
   },
   {
     key: 'asldecoder',
@@ -143,7 +192,7 @@ export const projects: Project[] = [
     link: '/canlock',
     github: 'https://github.com/cia-ulaval/CANlock',
     category: 'application',
-    status: 'active',
+    status: 'shipped',
     semester: 'hiver2025',
     partner: 'Thales',
   },

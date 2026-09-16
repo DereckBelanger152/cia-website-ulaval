@@ -80,6 +80,34 @@ Content is data under `src/data/`, never arrays built inside a component:
   `home.projects.<key>.title`).
 - Gallery badge labels come from `gallery.categoryLabels.<category>`.
 
+### 5a) Adding A Project Means Touching Seven Places
+
+A project is not registered anywhere central — it is assembled from these, and
+missing one fails quietly rather than loudly:
+
+1. `data/projects.ts` — the index row (drives Home, `/projects`, and the cover
+   facts block).
+2. `data/pages/<name>.ts` — the `ProjectPageSpec`. Compose it out of the
+   existing block kinds; do not add a kind for a one-off layout.
+3. `pages/<Name>.tsx` — a four-line component that renders `ProjectLayout`.
+4. `App.tsx` — the import and the `<Route>`.
+5. `public/sitemap.xml` — the `<url>` entry (see section 3).
+6. `locales/en/translation.json` **and** `locales/fr/translation.json` — the
+   page namespace plus `home.projects.<key>.{title,description}`. The card and
+   the detail page read different keys; adding only the namespace leaves the
+   card falling back to `defaultDescription`.
+
+Shape traps worth knowing, because they render blank instead of erroring:
+
+- `cards` and `steps` read their `itemsKey` through `asItems()`, which **drops
+  any row without a `title`**. A row keyed `name` or `label` disappears.
+- `list`, `tags` and a `columns` column read theirs through `asStrings()`,
+  which drops anything that is not a string. Objects disappear.
+- A project with no picture carries `image: ''` and the card renders a
+  `projects.noPreview` placeholder. Keep such a project out of the first three
+  rows of `projects.ts` — Home slices those as its featured trio and the lead
+  card is image-led.
+
 ## 5b) Shared Building Blocks — Check Here Before Writing A New One
 
 | Need                                | Use                                           |
@@ -90,6 +118,7 @@ Content is data under `src/data/`, never arrays built inside a component:
 | Reduced-motion check outside render | `scrollBehavior()` in `hooks/useMotion.ts`    |
 | Card surfaces                       | `components/ui/minimal-card.tsx`              |
 | Discord glyph                       | `components/DiscordIcon.tsx`                  |
+| Closed-record list (archive)        | `components/ArchiveSection.tsx`               |
 
 Each of these exists because the same code had been written two or three times
 over and the copies had already drifted apart.

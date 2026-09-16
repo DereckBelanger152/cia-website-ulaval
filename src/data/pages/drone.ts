@@ -1,6 +1,6 @@
 import type { ProjectPageSpec } from '../projectPages';
 
-const JSON_LD = `{"@context":"https://schema.org","@type":"Event","name":"Compétition de Drone Laser Tag","description":"Compétition universitaire de drones autonomes avec IA embarquée et laser tag","organizer":{"@type":"Organization","name":"Club Intelligence Artificielle - Université Laval","url":"https://cia.ift.ulaval.ca"},"performer":{"@type":"Person","name":"Anthony Lavertu","jobTitle":"Team Lead"},"sponsor":[{"@type":"Person","name":"Philippe Giguère"},{"@type":"Organization","name":"Tracel AI"}],"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","keywords":["drone","IA","reinforcement learning","robotique","compétition"]}`;
+const JSON_LD = `{"@context":"https://schema.org","@type":"Event","name":"Compétition de Drone Laser Tag","description":"Compétition universitaire de drones autonomes avec IA embarquée et laser tag","organizer":{"@type":"Organization","name":"Club Intelligence Artificielle - Université Laval","url":"https://cia.ift.ulaval.ca"},"sponsor":[{"@type":"Person","name":"Philippe Giguère"},{"@type":"Organization","name":"Tracel AI"}],"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","keywords":["drone","IA","reinforcement learning","robotique","compétition"]}`;
 
 export const drone: ProjectPageSpec = {
   key: 'drone',
@@ -14,7 +14,7 @@ export const drone: ProjectPageSpec = {
     {
       kind: 'tags',
       titleKey: 'drone.team.title',
-      itemKeys: ['drone.team.lead', 'drone.team.partner', 'drone.team.size'],
+      itemKeys: ['drone.team.partner', 'drone.team.size'],
     },
     {
       kind: 'columns',

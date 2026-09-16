@@ -93,6 +93,11 @@ export const teamSections: TeamSection[] = [
         imgSrc: '/portrait/mimi-baret.webp',
       },
       {
+        name: 'Maëli Morneau',
+        roleKey: 'management.roles.designsManager',
+        imgSrc: '/portrait/maeli-morneau.jpg',
+      },
+      {
         name: 'Dereck Bélanger',
         roleKey: 'management.roles.websiteManager',
         missionKey: 'management.missions.dereck',
@@ -112,13 +117,6 @@ export const teamSections: TeamSection[] = [
   {
     titleKey: 'management.sections.projectsTeam',
     members: [
-      {
-        name: 'Guilhem Ané',
-        roleKey: 'management.roles.trainingsManager',
-        missionKey: 'management.missions.guilhem',
-        imgSrc: '/portrait/guilhem-ane.webp',
-        linkedIn: 'https://www.linkedin.com/in/guilhemane/',
-      },
       {
         name: 'Benjamin Sekpona-Medjago',
         roleKey: 'management.roles.projectsManager',
@@ -162,29 +160,11 @@ export const teamSections: TeamSection[] = [
         linkedIn: 'https://www.linkedin.com/in/alexandrine-lehoux-b511771b7/',
       },
       {
-        name: 'Michal Naumiak',
-        roleKey: 'management.roles.partnershipsManager',
-        missionKey: 'management.missions.mihal',
-        imgSrc: '/portrait/michal-naumiak.webp',
-      },
-      {
-        name: 'Chaima Mohsni',
-        roleKey: 'management.roles.partnershipsManager',
-        imgSrc: '/portrait/chaima-mohsni.webp',
-      },
-      {
         name: 'Adriana Paternina',
         roleKey: 'management.roles.treasuryManager',
         missionKey: 'management.missions.adriana',
         imgSrc: '/portrait/adriana-maria.webp',
         linkedIn: 'https://www.linkedin.com/in/adriana-paternina/',
-      },
-      {
-        name: 'Anthony Lavertu',
-        roleKey: 'management.roles.externalRelationsManager',
-        missionKey: 'management.missions.anthony',
-        imgSrc: '/portrait/anthony.webp',
-        linkedIn: 'https://www.linkedin.com/in/anthony-lavertu-2a29a7179/',
       },
     ],
   },
@@ -198,22 +178,9 @@ export const teamSections: TeamSection[] = [
         imgSrc: '/portrait/ulysse-gagne.webp',
       },
       {
-        name: 'William Blanchet Lafrenière',
-        roleKey: 'management.roles.socialManager',
-        missionKey: 'management.missions.william',
-        imgSrc: '/portrait/william-blanchet.webp',
-        linkedIn: 'https://www.linkedin.com/in/william-blanchet-lafrenière-8337282b1/',
-      },
-      {
         name: 'Félix Larrivée',
         roleKey: 'management.roles.socialManager',
         imgSrc: '/portrait/felix-larrivee.webp',
-      },
-      {
-        name: 'Melek Sebri',
-        roleKey: 'management.roles.socialManager',
-        imgSrc: '/portrait/melek-sebri.webp',
-        linkedIn: 'https://www.linkedin.com/in/melek-sebri/',
       },
       {
         name: 'Nora Belattar',
@@ -237,12 +204,6 @@ export const teamSections: TeamSection[] = [
   {
     titleKey: 'management.sections.teamLeads',
     members: [
-      {
-        name: 'Anthony Lavertu',
-        role: 'Drone Team Lead',
-        imgSrc: '/portrait/anthony.webp',
-        linkedIn: 'https://www.linkedin.com/in/anthony-lavertu-2a29a7179/',
-      },
       {
         name: 'Benjamin Leblanc',
         role: 'SGD-Beyond Team Lead',
@@ -290,8 +251,10 @@ export const teamSections: TeamSection[] = [
 
 export const alumni: { name: string; roleKey: string }[] = [
   { name: 'Nathaniel D’Amours', roleKey: 'management.roles.president' },
+  { name: 'Mathieu Bazinet', roleKey: 'management.roles.trainingsManager' },
   { name: 'Louis-Étienne Messier', roleKey: 'management.roles.logisticsLeader' },
   { name: 'Jordan Mathieu', roleKey: 'management.roles.projectsManager' },
+  { name: 'Anthony Lavertu', roleKey: 'management.roles.externalRelationsManager' },
   { name: 'Amen Ouannes', roleKey: 'management.roles.projectsManager' },
   { name: 'Youssouf Boubechiche', roleKey: 'management.roles.designsManager' },
 ];
@@ -301,8 +264,6 @@ export const LEADERSHIP_LD_NAMES = [
   'Rana Azemdroub',
   'Alexandrine Lehoux',
   'Yves Mamadou Faye',
-  'Anthony Lavertu',
   'Dereck Bélanger',
-  'Guilhem Ané',
   'Ulysse Gagné',
 ] as const;

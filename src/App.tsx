@@ -18,6 +18,9 @@ import PoppyConception from './pages/PoppyConception';
 import PoppySimulation from './pages/PoppySimulation';
 import ASLDecoder from './pages/ASLDecoder';
 import AvionCargo from './pages/AvionCargo';
+import NavFlow from './pages/NavFlow';
+import BioVision from './pages/BioVision';
+import HemoMentor from './pages/HemoMentor';
 import Privacy from './pages/Privacy';
 
 import Navbar from './components/Navbar';
@@ -49,6 +52,9 @@ function App() {
             <Route path="/poppy-simulation" element={<PoppySimulation />} />
             <Route path="/asl-decoder" element={<ASLDecoder />} />
             <Route path="/avion-cargo" element={<AvionCargo />} />
+            <Route path="/navflow" element={<NavFlow />} />
+            <Route path="/biovision" element={<BioVision />} />
+            <Route path="/hemomentor" element={<HemoMentor />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/collaboration" element={<Collaboration />} />
             <Route path="/join-us" element={<JoinUs />} />

@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ArchiveSection from '../components/ArchiveSection';
 import MemberModal, { type TeamMember } from '../components/MemberModal';
 import MemberShiftCard from '../components/MemberShiftCard';
 import Seo from '../components/Seo';
@@ -97,24 +98,15 @@ function Management() {
           </section>
         ))}
 
-        <section className="mx-auto mt-6 max-w-7xl border-t border-steel/25 px-4 pt-16 md:px-6">
-          <h2 className="cia-display pb-6 text-2xl sm:text-3xl">
-            {t('management.sections.alumni')}
-          </h2>
-          <ul className="max-w-2xl">
-            {alumni.map((person, i) => (
-              <li
-                key={person.name}
-                className={`flex items-baseline justify-between gap-6 py-3 ${i > 0 ? 'cia-rule' : ''}`}
-              >
-                <span className="font-heading text-lg font-semibold text-primary-300">
-                  {person.name}
-                </span>
-                <span className="cia-meta shrink-0">{t(person.roleKey)}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        <ArchiveSection
+          className="mx-auto mt-6 max-w-7xl px-4 pt-16 md:px-6"
+          titleKey="management.sections.alumni"
+          entries={alumni.map((person) => ({
+            id: person.name,
+            title: person.name,
+            meta: t(person.roleKey),
+          }))}
+        />
       </div>
     </>
   );

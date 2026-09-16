@@ -6,62 +6,77 @@ import Seo from '../components/Seo';
 import LogoCarousel from '../components/ui/logo-carousel';
 import { MinimalCard, MinimalCardContent, MinimalCardTitle } from '../components/ui/minimal-card';
 import { partners } from '../data/partners';
+import { projects } from '../data/projects';
 import { scrollBehavior } from '../hooks/useMotion';
 import { openEmailDraft } from '../lib/email';
-import { ORGANIZATION_LD, SITE } from '../lib/site';
+import { MEMBER_COUNT, ORGANIZATION_LD, SITE } from '../lib/site';
 
 const sponsorshipTiers = [
   {
     name: 'Bronze',
-    price: '$1,000',
+    price: '1 000 $',
     accentBorder: 'border-t-amber-700/80',
     accentText: 'text-amber-800',
     featured: false,
     benefits: [
-      'Your logo and link on our website',
-      'Your logo presented at our events',
-      'Your logo on our t-shirts',
+      'Standard partner logo on our t-shirts and banners',
+      'Standard partner logo at our events',
+      'Partner description, logo and hyperlinks on our website',
     ],
   },
   {
     name: 'Silver',
-    price: '$5,000',
+    price: '5 000 $',
     accentBorder: 'border-t-slate-400/70',
     accentText: 'text-slate-700',
     featured: false,
     benefits: [
-      'Your logo and link on our website',
-      'Your logo presented in bold at our events',
-      'Your logo in bold on our t-shirts',
-      'Special thanks on our social media',
-      'Invitation of one member to one of our opening events',
-      'Repost of an ad',
+      '1 ad repost and student question interactions (Discord)',
+      'Deliver training to students',
+      'Invitation for 2 people to the project cocktail',
+      'Invitation for 1 person to our opening events',
+      'Personalized thanks on our social media',
+      'Large partner logo on our t-shirts and banners',
+      'Large partner logo at our events',
+      'Partner description, logo and hyperlinks on our website',
     ],
   },
   {
     name: 'Gold',
-    price: '$10,000',
+    price: '8 000 $',
     accentBorder: 'border-t-yellow-400/90',
     accentText: 'text-amber-700',
     featured: true,
     benefits: [
-      'Your logo and link on our website',
-      'Your logo presented in very bold at our events',
-      'Your logo in very bold on our t-shirts',
-      'Special thanks on our social media',
-      'Invitation of three members to one of our opening events',
-      'Repost of three ads',
-      'Sponsorship of one of our projects',
-      'Access to our CV book of student researchers',
-      'Your logo on one of our projects',
+      'Access to our members CV book',
+      'Sponsorship of one of our projects (optional)',
+      'Exclusive logo on one of our projects (first come, first served)',
+      '2 ad reposts and student question interactions (Discord)',
+      'Deliver training to students',
+      'Invitation for 5 people to the project cocktail',
+      'Invitation for 3 people to our opening events',
+      'Personalized thanks on our social media',
+      'Very large partner logo on our t-shirts and banners',
+      'Very large partner logo at our events',
+      'Partner description, logo and hyperlinks on our website',
     ],
   },
 ];
 
+/* The other three entries in `partners` are student associations that back the
+   club rather than industry partners, so this figure leaves them out. */
+const STUDENT_ASSOCIATIONS = new Set(['AESGUL', 'ASETIN', 'CADEUL']);
+
 const impactMetrics = [
-  { metric: '3', labelKey: 'projectsCompleted' },
-  { metric: '30+', labelKey: 'studentResearchers' },
-  { metric: '6', labelKey: 'industryPartners' },
+  {
+    metric: String(projects.filter((project) => project.status === 'shipped').length),
+    labelKey: 'projectsCompleted',
+  },
+  { metric: MEMBER_COUNT, labelKey: 'studentResearchers' },
+  {
+    metric: String(partners.filter((partner) => !STUDENT_ASSOCIATIONS.has(partner.alt)).length),
+    labelKey: 'industryPartners',
+  },
   { metric: '2', labelKey: 'publishedPapers' },
 ];
 

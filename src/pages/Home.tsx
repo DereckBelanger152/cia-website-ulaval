@@ -8,7 +8,7 @@ import LogoCarousel from '../components/ui/logo-carousel';
 import { partners } from '../data/partners';
 import { domainCount, projects } from '../data/projects';
 import { useMotion } from '../hooks/useMotion';
-import { ORGANIZATION_LD } from '../lib/site';
+import { MEMBER_COUNT, ORGANIZATION_LD } from '../lib/site';
 
 const FEATURED = 3;
 
@@ -74,7 +74,7 @@ function Home() {
         <dl className="grid grid-cols-3 mt-14 md:mt-20 border-t-2 border-coral">
           {[
             { v: `${projects.length}+`, k: 'home.stats.projects', d: 'Projets' },
-            { v: '40+', k: 'home.stats.members', d: 'Membres' },
+            { v: MEMBER_COUNT, k: 'home.stats.members', d: 'Membres' },
             { v: domainCount, k: 'home.stats.domains', d: 'Domaines' },
           ].map((s, i) => (
             <div

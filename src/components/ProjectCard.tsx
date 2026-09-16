@@ -35,9 +35,17 @@ function ProjectCard({ project }: Props) {
         )}
 
         <MinimalCardContent className="flex flex-1 flex-col">
-          <MinimalCardEyebrow className="mb-0">
-            {t(`projects.categories.${project.category}`)}
-          </MinimalCardEyebrow>
+          <div className="flex items-center justify-between gap-3">
+            <MinimalCardEyebrow className="mb-0">
+              {t(`projects.categories.${project.category}`)}
+            </MinimalCardEyebrow>
+
+            {project.recruiting && (
+              <span className="cia-tick relative shrink-0 pl-3 cia-mono text-xs uppercase tracking-eyebrow text-accent-500">
+                {t('projects.recruiting')}
+              </span>
+            )}
+          </div>
 
           <MinimalCardTitle className="mt-2 flex items-center gap-1.5">
             {t(`home.projects.${project.key}.title`, project.defaultTitle)}

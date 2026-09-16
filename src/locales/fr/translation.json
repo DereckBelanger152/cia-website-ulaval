@@ -59,7 +59,7 @@
       "drone": {
         "title": "Drone - Laser Tag",
         "homeDescription": "Concevez et construisez un drone FPV autonome pour concourir dans une compétition de laser tag.",
-        "description": "Développez un système laser clé en main pour une compétition FPV autonome : capteur 180°, émission, PCB custom et logiciel de gestion centralisé. Partenaire académique : Philippe Giguère. Team Lead : Anthony Lavertu."
+        "description": "Développez un système laser clé en main pour une compétition FPV autonome : capteur 180°, émission, PCB custom et logiciel de gestion centralisé. Partenaire académique : Philippe Giguère."
       },
       "poppy-conception": {
         "title": "Poppy Humanoid (Conception)",
@@ -91,6 +91,18 @@
       "avion-cargo": {
         "title": "Avion-Cargo",
         "description": "Système d'atterrissage autonome de précision par vision par ordinateur. Détection de marqueurs ArUco, estimation 3D en temps réel et guidage intelligent pour des atterrissages < 10 cm."
+      },
+      "navflow": {
+        "title": "NavFlow",
+        "description": "Et si les feux de circulation pouvaient apprendre à réduire eux-mêmes les embouteillages ? NavFlow entraîne des agents par renforcement dans un environnement urbain simulé, puis mesure leur effet sur le temps d'attente, la durée des trajets et la congestion."
+      },
+      "biovision": {
+        "title": "BioVision",
+        "description": "Des téraoctets de vidéo captés par des colliers-caméras portés par des caribous de la Côte-Nord. BioVision développe des modèles de vision par ordinateur pour y reconnaître des comportements et caractériser l'environnement, avec le Département de biologie."
+      },
+      "hemomentor": {
+        "title": "HemoMentor",
+        "description": "Un assistant qui observe l'interface d'une machine d'hémolyse avec une caméra et montre à l'utilisateur où appuyer. Modèles vision-langage, inférence locale et suivi de la main, sans aucune modification de l'équipement."
       }
     },
     "collaboration": {
@@ -117,6 +129,16 @@
     "status": {
       "active": "En cours",
       "shipped": "Terminé"
+    },
+    "recruiting": "Recrutement",
+    "sectionNav": "Sections de projets",
+    "nav": {
+      "active": "En cours",
+      "shipped": "Terminés"
+    },
+    "completed": {
+      "title": "Projets terminés",
+      "subtitle": "Le travail livré par les équipes des sessions précédentes."
     },
     "semesters": {
       "automne2026": "Automne 2026",
@@ -283,7 +305,24 @@
       "Access to our members CV book": "Accès au carnet de CV de nos membres",
       "Access to our CV book of student researchers": "Accès à notre recueil de CV de la relève étudiante en recherche",
       "Your logo on our projects": "Votre logo sur nos projets",
-      "Your logo on one of our projects": "Votre logo sur l'un de nos projets"
+      "Your logo on one of our projects": "Votre logo sur l'un de nos projets",
+      "Standard partner logo on our t-shirts and banners": "Logo du partenaire standard sur nos chandails et bannières",
+      "Standard partner logo at our events": "Logo du partenaire standard lors de nos événements",
+      "Partner description, logo and hyperlinks on our website": "Description, logo et hyperliens sur notre site web",
+      "1 ad repost and student question interactions (Discord)": "1 repartage d’annonce et interactions avec les étudiants concernant leurs questionnements (Discord)",
+      "2 ad reposts and student question interactions (Discord)": "2 repartages d’annonces et interactions avec les étudiants concernant leurs questionnements (Discord)",
+      "Deliver training to students": "Donner des formations aux étudiants",
+      "Invitation for 2 people to the project cocktail": "Invitation de 2 personnes au cocktail des projets",
+      "Invitation for 5 people to the project cocktail": "Invitation de 5 personnes au cocktail des projets",
+      "Invitation for 1 person to our opening events": "Invitation de 1 personne à nos événements d’ouverture",
+      "Invitation for 3 people to our opening events": "Invitation de 3 personnes à nos événements d’ouverture",
+      "Personalized thanks on our social media": "Remerciements personnalisés sur nos réseaux sociaux",
+      "Large partner logo on our t-shirts and banners": "Gros logo du partenaire sur nos chandails et bannières",
+      "Large partner logo at our events": "Gros logo du partenaire lors de nos événements",
+      "Very large partner logo on our t-shirts and banners": "Très gros logo du partenaire sur nos chandails et bannières",
+      "Very large partner logo at our events": "Très gros logo du partenaire lors de nos événements",
+      "Sponsorship of one of our projects (optional)": "Parrainage d’un de nos projets (facultatif)",
+      "Exclusive logo on one of our projects (first come, first served)": "Logo exclusif sur un de nos projets (premier arrivé, premier servi)"
     }
   },
   "management": {
@@ -345,16 +384,12 @@
       "douae": "Recruter des étudiants et suivre leur intégration dans le Club",
       "rana": "Assurer une présence aux activités de visibilité (portes ouvertes, festivals, etc.)",
       "alexandrine": "Guider l'équipe afin d'obtenir 50 000 $",
-      "mihal": "Former des partenariats et remplir des demandes de financement",
       "adriana": "Gérer le budget et les factures",
-      "anthony": "Gérer les relations avec les organismes à l'Université Laval et à l'international",
       "yves": "Guider l'équipe pour atteindre 800 abonnés LinkedIn",
       "hibaComm": "Créer le calendrier des annonces et assurer le retour de celles-ci",
       "dereck": "Créer, maintenir et mettre à jour le site web",
       "ulysse": "Créer des liens entre 500 membres à travers 30 événements",
-      "william": "Organiser des sorties (soirées jeux de société, 5@7, sport, etc.)",
-      "nora": "Organiser des activités pour reconnaître les succès",
-      "guilhem": "Former les membres selon les besoins des projets"
+      "nora": "Organiser des activités pour reconnaître les succès"
     },
     "structuredData": {
       "name": "Équipe et Leadership - Club Intelligence Artificielle Université Laval",
@@ -1214,7 +1249,6 @@
     },
     "team": {
       "title": "Leadership",
-      "lead": "Team Lead: Anthony Lavertu",
       "partner": "Partenaires: Philippe Giguère / Tracel AI",
       "size": "Effectif: 10 membres"
     },
@@ -1363,6 +1397,302 @@
       ]
     }
   },
+  "navflow": {
+    "meta": {
+      "title": "NavFlow — Feux de circulation et apprentissage par renforcement | Club IA ULaval",
+      "description": "NavFlow : simulateur de trafic urbain et agents entraînés par renforcement pour adapter la signalisation aux conditions de circulation. Projet du Club IA ULaval, automne 2026."
+    },
+    "hero": {
+      "subtitle": "Apprentissage par renforcement pour la gestion du trafic urbain",
+      "paragraph1": "Et si les feux de circulation pouvaient apprendre à réduire eux-mêmes les embouteillages ? NavFlow explore cette idée en utilisant l'apprentissage par renforcement pour développer un système capable d'adapter dynamiquement la signalisation routière aux conditions de circulation.",
+      "paragraph2": "À travers un environnement urbain simulé, l'équipe concevra et entraînera des agents intelligents chargés de contrôler différentes intersections. Leur performance sera évaluée selon des métriques concrètes comme le temps d'attente, la durée des trajets et le niveau de congestion. Un projet idéal pour découvrir le reinforcement learning tout en s'attaquant à un problème d'optimisation bien réel."
+    },
+    "team": {
+      "title": "Équipe",
+      "lead": "Team Lead : Noureddine Faleh",
+      "size": "5 membres recherchés"
+    },
+    "mission": {
+      "title": "Un simulateur d'abord, des agents ensuite",
+      "paragraph1": "L'équipe construit d'abord l'environnement : un réseau routier, des véhicules, des feux, et une interface pour regarder tout cela bouger. Ce simulateur devient ensuite le banc d'essai où se comparent les stratégies de contrôle.",
+      "paragraph2": "Les approches classiques — feux à durée fixe, plans coordonnés — servent de référence. Les agents entraînés par renforcement doivent ensuite faire mieux, chiffres à l'appui : temps d'attente, durée des trajets, congestion."
+    },
+    "deliverables": {
+      "title": "Livrables",
+      "items": [
+        "Un simulateur de trafic urbain interactif.",
+        "Une interface de visualisation des véhicules et des feux de circulation.",
+        "Plusieurs stratégies d'optimisation, classiques et basées sur l'IA.",
+        "Un système d'évaluation mesurant le temps de trajet, le temps d'attente et la congestion.",
+        "Un rapport de mi-session et un rapport final."
+      ]
+    },
+    "timeline": {
+      "title": "Échéancier",
+      "items": [
+        {
+          "title": "Session 1 — Construire le terrain d'essai",
+          "description": "Mise en place du projet, développement du simulateur et de l'interface de visualisation."
+        },
+        {
+          "title": "Session 2 — Optimiser",
+          "description": "Stratégies d'optimisation, campagnes d'expérimentation et raffinement des agents."
+        }
+      ]
+    },
+    "tech": {
+      "title": "Technologies et compétences",
+      "stack": {
+        "title": "Stack"
+      },
+      "learning": {
+        "title": "Ce que tu développeras",
+        "items": [
+          "Apprentissage par renforcement et algorithmes d'optimisation",
+          "Simulation de systèmes complexes",
+          "Architecture et développement logiciel",
+          "Visualisation et analyse de données",
+          "Travail collaboratif avec Git"
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi rejoindre NavFlow ?",
+      "items": [
+        {
+          "title": "Un problème que tout le monde connaît",
+          "description": "L'optimisation urbaine se mesure ici en secondes passées à un feu rouge. Les résultats s'expliquent sans jargon."
+        },
+        {
+          "title": "Du RL de bout en bout",
+          "description": "Environnement, agents, entraînement, évaluation : la boucle complète, pas seulement l'ajustement d'un modèle sur un jeu de données figé."
+        },
+        {
+          "title": "De la place pour les profils dev",
+          "description": "Entre le moteur de simulation et l'interface de visualisation, il y a autant à construire qu'à entraîner."
+        }
+      ]
+    },
+    "cta": {
+      "title": "NavFlow démarre à la session d'automne 2026.",
+      "subtitle": "Cinq places à combler."
+    }
+  },
+  "biovision": {
+    "meta": {
+      "title": "BioVision — Vision par ordinateur et écologie du caribou | Club IA ULaval",
+      "description": "BioVision : modèles de vision par ordinateur pour analyser automatiquement des téraoctets de vidéo captés par des colliers-caméras portés par des caribous de la Côte-Nord."
+    },
+    "hero": {
+      "subtitle": "Vision par ordinateur au service de l'écologie de terrain",
+      "paragraph1": "Des milliers d'heures de vidéos provenant du terrain peuvent contenir une quantité impressionnante d'informations sur les animaux et leur environnement. BioVision cherche à automatiser cette analyse grâce à la vision par ordinateur et à l'apprentissage automatique.",
+      "paragraph2": "Le projet s'intéresse notamment aux populations de caribous de la Côte-Nord. À partir de données vidéo réelles, l'équipe développera des méthodes permettant d'identifier des comportements et d'extraire des informations sur l'environnement, comme la végétation, la neige ou les conditions météorologiques. BioVision offre ainsi un pont entre intelligence artificielle et recherche en écologie, avec des données provenant directement du terrain."
+    },
+    "team": {
+      "title": "Équipe",
+      "leads": "Team Leads : Khadidiatou Seck Dieng et Nourhane Anani",
+      "contacts": "Personnes-ressources : Clément Fortin et Daniel Fortin (Département de biologie)",
+      "size": "5 membres recherchés"
+    },
+    "context": {
+      "title": "Des vidéos filmées par les caribous eux-mêmes",
+      "paragraph1": "Les séquences proviennent de colliers-caméras portés par des caribous de la Côte-Nord. Le volume se compte en téraoctets et le dépouillement se fait aujourd'hui à la main.",
+      "paragraph2": "En collaboration avec le Département de biologie de l'Université Laval, l'équipe développe des modèles capables de traiter ces séquences automatiquement, pour que le temps des biologistes serve à interpréter les résultats plutôt qu'à les extraire."
+    },
+    "objectives": {
+      "title": "Deux axes de travail",
+      "items": [
+        {
+          "title": "Caractériser l'environnement",
+          "description": "Détecter les types de végétation, l'eau, la neige, le changement de saison et la présence d'autres animaux."
+        },
+        {
+          "title": "Analyser le comportement",
+          "description": "Reconnaître l'alimentation, le repos, le déplacement, la fuite et l'immobilité, afin d'estimer un budget d'activité."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "Livrables",
+      "items": [
+        "Un pipeline capable de traiter des jeux de données vidéo massifs.",
+        "Des modèles de vision par ordinateur pour l'identification automatique des éléments observés.",
+        "Une caractérisation de l'environnement filmé.",
+        "Des méthodes de détection des comportements du caribou.",
+        "Des scripts d'évaluation des performances.",
+        "Un rapport de mi-session et un rapport final."
+      ]
+    },
+    "timeline": {
+      "title": "Échéancier",
+      "items": [
+        {
+          "title": "Session 1 — Explorer et valider",
+          "description": "Formation de l'équipe, exploration des données, premiers modèles et validation. Quinze semaines."
+        },
+        {
+          "title": "Session 2 — Comportements et performance",
+          "description": "Développement avancé, analyse comportementale et optimisation des performances. Quatorze semaines."
+        }
+      ]
+    },
+    "tech": {
+      "title": "Technologies et compétences",
+      "stack": {
+        "title": "Stack"
+      },
+      "skills": {
+        "title": "Compétences développées",
+        "items": [
+          "Vision par ordinateur et apprentissage profond",
+          "Traitement vidéo",
+          "Annotation de données",
+          "Développement logiciel",
+          "Gestion de données à grande échelle"
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi rejoindre BioVision ?",
+      "items": [
+        {
+          "title": "De vraies données de terrain",
+          "description": "Cadrage imprévisible, éclairage variable, mouvement constant : rien à voir avec un jeu de données déjà nettoyé."
+        },
+        {
+          "title": "Un usage en recherche",
+          "description": "Les méthodes développées servent directement au travail des biologistes de l'Université Laval."
+        },
+        {
+          "title": "L'échelle comme contrainte",
+          "description": "Traiter des téraoctets change la façon de concevoir un pipeline. C'est une compétence qui se transporte ailleurs."
+        }
+      ]
+    },
+    "cta": {
+      "title": "BioVision démarre à la session d'automne 2026.",
+      "subtitle": "Cinq places à combler."
+    }
+  },
+  "hemomentor": {
+    "meta": {
+      "title": "HemoMentor — Assistant visuel pour équipement médical | Club IA ULaval",
+      "description": "HemoMentor : un assistant qui observe l'interface d'une machine d'hémolyse avec une caméra et guide l'utilisateur vers le bon bouton, en temps réel. Projet du Club IA ULaval."
+    },
+    "hero": {
+      "subtitle": "Un assistant visuel pour l'utilisation d'une machine d'hémolyse",
+      "paragraph1": "HemoMentor vise à rendre l'utilisation d'équipements médicaux plus simple et accessible grâce à un assistant capable de comprendre ce que voit l'utilisateur. Plutôt que de modifier directement la machine, le système observe son interface et utilise la vision par ordinateur pour guider l'utilisateur étape par étape.",
+      "paragraph2": "À partir d'une instruction en langage naturel, l'assistant doit être capable de retrouver et de mettre en évidence le bouton, l'indicateur ou la région correspondante sur l'équipement, et ce, en temps réel. Le défi combine modèles vision-langage, traitement d'image et inférence locale pour développer une solution pouvant notamment faciliter l'utilisation de la machine par des personnes âgées ou ayant des capacités réduites."
+    },
+    "context": {
+      "title": "« Où dois-je appuyer pour continuer ? »",
+      "paragraph1": "Les interfaces d'équipements médicaux sont denses, et elles le sont davantage pour une personne âgée ou vivant avec une limitation physique ou cognitive. La question est simple à poser et difficile à résoudre seul devant un panneau de commande.",
+      "paragraph2": "HemoMentor répond en regardant l'écran. Une caméra observe l'interface, le système localise l'élément demandé et le met en évidence, puis suit le doigt ou le pointeur pour vérifier que la personne se dirige vers la bonne cible. La machine, elle, n'est pas touchée : ni son logiciel, ni son fonctionnement interne."
+    },
+    "objectives": {
+      "title": "Objectifs techniques",
+      "items": [
+        {
+          "title": "Rectification de l'image",
+          "description": "La caméra n'est jamais parfaitement alignée avec l'écran. Le système doit détecter l'interface et corriger la perspective automatiquement."
+        },
+        {
+          "title": "Compréhension des instructions",
+          "description": "Traduire une phrase en langage naturel en un élément précis de l'interface — localement et en temps réel."
+        },
+        {
+          "title": "Identification de la cible",
+          "description": "Boutons, valeurs et icônes se touchent presque. Il faut désigner le bon sans confondre deux voisins."
+        },
+        {
+          "title": "Vérification de l'interaction",
+          "description": "Suivre le doigt, le pointeur ou tout autre moyen d'interaction, et confirmer en direct qu'il se dirige vers la cible attendue."
+        }
+      ]
+    },
+    "constraints": {
+      "title": "Contraintes",
+      "note": "L'équipe peut donc commencer à développer et à tester sans accès immédiat à un véritable équipement médical.",
+      "items": [
+        "Fonctionner en temps réel.",
+        "Fonctionner uniquement par observation visuelle.",
+        "N'exiger aucune modification de la machine d'hémolyse.",
+        "Pouvoir être développé à partir d'interfaces simulées sur ordinateur.",
+        "N'utiliser aucune donnée réelle de patient pour le prototype."
+      ]
+    },
+    "timeline": {
+      "title": "Automne 2026 → hiver 2027",
+      "subtitle": "Échéancier",
+      "description": "Le développement commence à la session d'automne 2026 et se poursuit à l'hiver. L'objectif est un prototype complet et évalué pour la fin mai 2027 ; les résultats obtenus pourront ensuite alimenter une publication scientifique."
+    },
+    "deliverables": {
+      "title": "Livrables",
+      "items": [
+        "Un prototype fonctionnel de HemoMentor.",
+        "Un système de détection et de compréhension de l'interface.",
+        "Un système de suivi et de vérification de l'interaction de l'utilisateur.",
+        "Un jeu de données annoté et les scripts de génération d'interfaces de test.",
+        "Un rapport présentant les performances obtenues.",
+        "Un dépôt contenant le code source documenté."
+      ]
+    },
+    "evaluation": {
+      "title": "Évaluation et ressources",
+      "criteria": {
+        "title": "Le prototype sera évalué sur",
+        "items": [
+          "La précision avec laquelle il trouve la bonne commande",
+          "Sa capacité à ne pas confondre des éléments voisins",
+          "Sa vitesse de réponse",
+          "Sa robustesse à l'éclairage, aux reflets et aux angles de caméra",
+          "La justesse de sa vérification d'interaction"
+        ]
+      },
+      "resources": {
+        "title": "Ressources fournies par Utili-M",
+        "items": [
+          "Impressions 3D",
+          "Microcontrôleurs et composantes électroniques",
+          "Logiciels et abonnements",
+          "Capteurs et matériel de prototypage"
+        ]
+      }
+    },
+    "domains": {
+      "title": "Domaines techniques",
+      "items": [
+        "Vision par ordinateur",
+        "IA multimodale",
+        "Modèles vision-langage",
+        "Détection d'objets",
+        "Suivi des mains",
+        "IA temps réel",
+        "Systèmes embarqués"
+      ]
+    },
+    "benefits": {
+      "title": "Pourquoi rejoindre HemoMentor ?",
+      "items": [
+        {
+          "title": "IA et accessibilité",
+          "description": "Le succès du projet se mesure à la capacité d'une personne à se servir d'une machine qu'elle trouvait jusque-là opaque."
+        },
+        {
+          "title": "Du modèle au matériel",
+          "description": "Vision-langage, inférence locale, caméra, prototype physique : le projet touche à toute la chaîne, pas seulement au modèle."
+        },
+        {
+          "title": "Une piste de publication",
+          "description": "Le prototype est évalué sur des critères mesurables, et les résultats peuvent alimenter une publication scientifique."
+        }
+      ]
+    },
+    "cta": {
+      "title": "HemoMentor démarre à la session d'automne 2026.",
+      "subtitle": "Le prototype est attendu pour la fin mai 2027."
+    }
+  },
   "asldecoder": {
     "meta": {
       "description": "ASL Decoder : système Raspberry Pi avec caméra pour la reconnaissance des gestes du langage des signes américain en temps réel grâce à l'intelligence artificielle."
@@ -1405,6 +1735,7 @@
   },
   "common": {
     "backToProjects": "Retour aux projets",
+    "archive": "Archive",
     "close": "Fermer",
     "scrollToTop": "Retour en haut de la page",
     "toggleNavigation": "Ouvrir ou fermer le menu de navigation",

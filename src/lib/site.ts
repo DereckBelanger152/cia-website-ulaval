@@ -6,6 +6,10 @@ export const OG_SITE_NAME = 'Club IA - Université Laval';
 
 export const DEFAULT_OG_IMAGE = '/banner/cia-logo.webp';
 
+/* Headcount claimed on Home and on the sponsorship page. One constant so the
+   two cannot drift apart again; update it when the club recounts. */
+export const MEMBER_COUNT = '50+';
+
 export const DISCORD_URL = 'https://discord.gg/ZPVwCjMpAq';
 
 export const SOCIAL_LINKS = {
